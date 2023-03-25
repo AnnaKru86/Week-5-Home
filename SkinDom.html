@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: 'Gilroy';
+        src: local('Gilroy'),
+            url('/week 5/fonts5/Gilroy-Light.woff2') format('woff2'),
+            url('/week 5/fonts5/Gilroy-Light.woff') format('woff'),
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid red;
+        width: 1920px;
+        height: 136px;
+        background-color: white;
+        width: 1920px;
+        background-color: white;
+    }
+
+    #MainLogo1 {
+        width: 124px;
+        height: 38px;
+    }
+
+    .menu {
+        font-family: 'Gilroy';
+        font-weight: 400px;
+        font-size: 18px;
+        line-height: 27px;
+        color: white;
+    }
+
+    .City-number {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        border: 1px solid red;
+        width: 1920px;
+        height: 49px;
+        background-color: #323232;
+    }
+
+    #number {
+        margin: 8px;
+        padding-right: 111px;
+        width: 167px;
+        font-style: normal;
+        height: 22px;
+        margin: 8px;
+    }
+
+    #City {
+        margin: 14px;
+        padding-left: 121px;
+        font-family: 'Gilroy';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        color: white;
+        background-color: #323232;
+    }
+
+    #number {
+        font-family: 'Gilroy';
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 150%;
+        color: white;
+
+    }
+
+    .dropdown-content .menu {
+        font-family: 'Gilroy';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+
+    .dropdown-content {
+        color: rgba(0, 0, 0, 0.5)
+    }
+
+    .menu {
+        color: black;
+    }
+
+    .button {
+        border: 0;
+    }
+
+    .navigation-buttons {
+        color: rgba(255, 255, 255, 1)
+    }
+
+    .Search {
+        Width: 19px;
+        height: 19px;
+
+    }
+
+    .Like {
+        Width: 21px;
+        height: 19px;
+    }
+
+    .Buy {
+        Width: 7px;
+        height: 8px;
+    }
+
+    .Account {
+        Width: 20, 96px;
+        height: 22px;
+    }
+
+    .Element {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url('/week 5/assets 5/Mainphoto.png');
+        width: 1920px;
+        height: 698px;
+        border: 1px solid red;
+    }
+
+    .background-image {
+        width: 1920px;
+        height: 698px;
+        left: 0px;
+        top: 136px;
+    }
+
+
+    h1 {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-size: 99px;
+        font-weight: 600px;
+        line-height: 150%;
+        color: black;
+        width: 550px;
+        height: 130px;
+        margin-left: 275px;
+        top: 226px;
+        border: 1px solid red;
+
+    }
+
+    h2 {
+        font-family: 'Gilroy';
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        color: black;
+        border: 1px solid red;
+        width: 496px;
+        height: 36px;
+        margin-left: 275px;
+        top: 375px;
+    }
+
+    #Way {
+        font-family: 'Bebas Neue';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        color: white;
+        margin-left: 275px;
+        right: 12.31%;
+        top: 58px;
+        bottom: 27.59%;
+        width: 258px;
+        border: 1px solid red;
+        background-color: black;
+    }
+
+    p {
+        font-family: 'Roboto'
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgba(78, 78, 78, 1)
+    }
+
+    .Container-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+        align-self: flex-end;
+        width: 1920px;
+        height: 632px;
+        border: 1px solid red;
+    }
+
+    .Container1,
+    .Container2,
+    .Container3,
+    .Container5,
+    .Container6 {
+        font-family: 'Roboto'
+    }
+
+    .Container1,
+    .Container5 {
+        color: rgba(130, 130, 130, 1)
+    }
+
+    #MainLogo2 {
+        width: 195px;
+        height: 60px;
+    }
+
+
+
+
+    #website,
+    #phone {
+
+        font-weight: 700px;
+        font-size: 22px;
+        line-height: 26.4px;
+    }
+
+    #adress {
+
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .Container2 {
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(78, 78, 78, 1)
+    }
+
+    #CatalogueC2,
+    #Info {
+        font-weight: 400px;
+        font-size: 22px;
+        line-height: 33px;
+        color: rgba(0, 0, 0, 1)
+    }
+
+    .Container3 {
+        font-weight: 400px;
+        font-size: 14px;
+        line-height: 16, 8px;
+        color: rgba(78, 78, 78, 1)
+    }
+
+    .Container4 {
+        width: 604px;
+        height: 59px;
+        border: 1px solid red;
+    }
+
+    #We {
+        width: 249px;
+        height: 44px;
+        font-weight: 400px;
+        font-size: 22px;
+        line-height: 44px;
+        color: rgba(0, 0, 0, 1)
+    }
+
+    .Container6 {
+        font-weight: 400px;
+        font-size: 14px;
+        line-height: 21px;
+        color: rgba(130, 130, 130, 1)
+    }
+</style>
+
+<body>
+    <header>
+        <div class="City-number">
+            <p id="number">8 495 259 25 00</p>
+            <select id="City" name="user_city">
+                <option value="1">Санкт-Петербург</option>
+                <option value="2">Москва</option>
+                <option value="3">Новосибирск</option>
+                <option value="4">Волгоград</option>
+                <option value="5">Воронеж</option>
+            </select>
+        </div>
+    </header>
+
+
+    <nav>
+        <div class="navigation">
+            <img id="MainLogo1" src="/week 5/assets 5/Logo.png" alt="Логотип">
+            <div class="Menu">
+                <button class="menu" href="catalogue.html">Каталог</button>
+                <button class="menu" href="club.html">Клуб косметологов</button>
+
+                <button class="menu" href="certificate.html">Сертификаты</button>
+
+                <button class="menu" href="Deliverypayment.html">Доставка и оплата</button>
+
+                <button class="menu" href="contacts.html">Контакты</button>
+
+                <button class="menu" href="blog.html">Блог</button>
+            </div>
+            <div class="navigation-buttons">
+                <a class="Search" href="search.html"> <img src="/week 5/assets 5/Search.png" alt=" Поиск"></a>
+                <a class="Like" href="like.html"> <img src="/week 5/assets 5/Like.png" alt="Избранное"></a>
+                <a class="Buy" href="buy.html"> <img src="/week 5/assets 5/Bag.png" alt="Купить"></a>
+                <a class="Account" href="account.html"> <img src="/week 5/assets 5/Accouny icon.png"
+                        alt="Личный кабинет"></a>
+            </div>
+    </nav>
+
+    <main>
+        <div class="Element">
+            <h1>SKINDOM</h1>
+            <h2>Специальные цены только до 30 апреля</h2>
+            <div>
+                <form action="page/new.html">
+                    <button id="Way">Перейти в каталог</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="Container-box">
+            <div class="Container1">
+                <img id="MainLogo2" src="/week 5/assets 5/Logo.png" alt="Логотип">
+                <p id="phone">8 495 259 25 00</p>
+                <p id="website">sale@kkshop.ru </p>
+                <p id="adress">Москва, ул. Шаболовка д. 34, стр.7 </p>
+            </div>
+            <div class="Container2">
+                <p id="CatalogueC2">Каталог</p>
+                <ul>
+                    <li><a class="menu" href="catalogue.html">Очищение</a></li>
+                    <li><a class="menu" href="club.html">Пилинги и скрабы</a></li>
+                    <li><a class="menu" href="certificate.html">Тоники</a></li>
+                    <li><a class="menu" href="Deliverypayment.html">Кремы</a></li>
+                    <li> <a class="menu" href="contacts.html">Концентраты</a></li>
+                    <li><a class="menu" href="blog.html">Концентраты с ферментами</a></li>
+                    <li><a class="menu" href="certificate.html">Сыворотки</a></li>
+                    <li><a class="menu" href="certificate.html">Эссенции</a></li>
+                    <li><a class="menu" href="certificate.html">Эмульсии</a></li>
+                    <li><a class="menu" href="certificate.html">Эмульсии и гели</a></li>
+                    <li><a class="menu" href="certificate.html">Маски для лица</a></li>
+                    <li><a class="menu" href="certificate.html">Жемчужная линия</a></li>
+                    <li><a class="menu" href="certificate.html">Уход за телом</a></li>
+                    <li><a class="menu" href="certificate.html">Уход за волосами</a></li>
+                    <li><a class="menu" href="certificate.html">Наборы и аксессуары</a></li>
+                </ul>
+            </div>
+            <div class="Container3">
+                <p id="Info">Информация</p>
+                <ul>
+                    <li><a class="Information" href="club.html">Клуб косметологов</a></li>
+                    <li><a class="Information" href="certificate.html">Сертификаты</a></li>
+                    <li><a class="Information" href="Deliverypayment.html">Доставка и оплата</a></li>
+                    <li><a class="Information" href="privacy.html">Конфиденциальность</a></li>
+                    <li> <a class="Information" href="contacts.html">Контакты</a></li>
+                    <li><a class="Information" href="blog.html">Блог</a></li>
+                    <li><a class="Information" href="refund.html">Возврат</a></li>
+                </ul>
+            </div>
+            <div class="Container4">
+                <p id="We">Мы в социальных сетях</p>
+
+                <img id="Logo" src="/week 5/assets 5/Logo/telegram.png" alt="Телеграм">
+                <img id="Logo" src="/week 5/assets 5/Logo/free-icon-odnoklassniki-3670250.png" alt="Ок">
+                <img id="Logo" src="/week 5/assets 5/Logo/facebook.png" alt="Facebook">
+                <img id="Logo" src="/week 5/assets 5/Logo/whatsapp.png" alt="WhatsApp">
+                <img id="Logo" src="/week 5/assets 5/Logo/viber.png" alt="Viber">
+                <img id="Logo" src="/week 5/assets 5/Logo/instagram.png" alt="Instagram">
+                <img id="Logo" src="/week 5/assets 5/Logo/vk.png" alt="VK">
+            </div>
+
+            <div class="Container5">
+                <p>Все торговые марки принадлежат их владельцам. Копирование составляющих частей сайта в какой бы то ни
+                    было
+                    форме без разрешения владельца авторских прав запрещено.</p>
+            </div>
+            <div class="Container6">
+                <p>ООО "Шармира" </p>
+                <p>ОГРН 1167746492704 </p>
+                <p>KK Shop © Москва 2021 Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

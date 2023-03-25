@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Flexcontainer {
+            width: 100%;
+            border: 1px solid rgb(89, 0, 255);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        .Container-box {
+            flex: 1;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: stretch;
+        }
+
+        .main-section {
+            flex-wrap: wrap-reverse;
+            width: 70%;
+            height: 60%;
+            padding: 10px;
+            background-color: white;
+            margin: 20px 30px;
+            margin-top: auto;
+
+        }
+
+        .side-area {
+            flex-basis: 35%;
+            width: 30%;
+            padding: 10px;
+            border: 1px solid rgb(89, 0, 255);
+            background-color: darkseagreen;
+        }
+
+        .item1,
+        .item2,
+        .item3 {
+            border: 1px solid rgb(89, 0, 255);
+            background-color: rgb(225, 226, 130);
+        }
+
+        .item1,
+        .item2 {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .item1 {
+            flex-basis: 50%;
+            margin: 20px 15px;
+        }
+
+        .item2 {
+            flex-basis: 50%;
+            margin: 20px 15px;
+        }
+
+        .item3 {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            justify-content: center;
+            flex-basis: 100%;
+            width: 98%;
+            padding: 10px;
+            margin: 15px;
+        }
+
+        .Footer-Flexcontainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            height: 20%;
+            background-color: rgb(168, 162, 162);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="Flexcontainer">
+            <p>[Шапка страницы]</p>
+        </div>
+    </header>
+    <main>
+        <div class="Flexcontainer">
+            <div class="Container-box">
+                <div class="side-area">[Боковая область]</div>
+                <div class="main-section">[Основная часть]
+                    <div class="item1">[Еще 1]</div>
+                    <div class="item2">[Еще 2]</div>
+                    <div class="item3">[Еще 3]</div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="Flexcontainer">
+                <div class="Footer-Flexcontainer">
+                    <div class="footer-sectoin1">[Секция футера 1]</div>
+                    <div class="footer-sectoin2">[Секция футера 2]</div>
+                    <div class="footer-sectoin3">[Секция футера 3]</div>
+                    <div class="footer-sectoin4">[Секция футера 4]</div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
